@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.main-card {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-main {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.bg-main img {
+  position: relative;
+}
+
+.top-left-circle {
+  bottom: 100px;
+  right: 100px;
+}
+
+.bottom-right-circle {
+  bottom: 400px;
+  left: 500px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

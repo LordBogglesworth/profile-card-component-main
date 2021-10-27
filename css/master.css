@@ -4,37 +4,25 @@
 
 body {
   margin: 0;
-  background-color: hsl(185, 75%, 39%);
-  height: 100vh;
-  width: 100vw;
+  overflow: hidden;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .main-card {
-  position: relative;
-  z-index: 1;
-  max-width: 20%;
+  width: 20%;
   border-style: solid;
-}
-
-.bg-main {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-.bg-main img {
+  z-index: 2;
   position: relative;
+  margin: 0 auto;
 }
 
-.top-left-circle {
-  bottom: 20em;
-  right: 15em;
-}
-
-.bottom-right-circle {
-  bottom: 35em;
-  left: 65em;
+.blu-circles img {
+  width: 100%;
 }
 
 .attribution {
@@ -43,4 +31,30 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Background */
+.bg-main {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(185, 75%, 39%);
+  min-width: 100%;
+}
+
+.big-circle {
+  margin: 0;
+  position: relative;
+}
+
+.top-bc {
+  bottom: 20em;
+  right: 15em;
+
+}
+
+.bot-bc {
+  bottom: 40em;
+  left: 65em;
 }

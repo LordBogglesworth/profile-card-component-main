@@ -3,58 +3,72 @@
 }
 
 body {
+  font-family: "Kumbh Sans", sans-serif;
   margin: 0;
-  overflow: hidden;
 }
 
-#wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
+h2,
+h3 {
+  font-weight: 700;
+}
+
+p,
+span {
+  font-weight: 400;
+  color: hsl(0, 3%, 50%);
+}
+
+.bg-main {
+  height: 100vh;
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-card {
-  width: 20%;
-  border-style: solid;
-  z-index: 2;
-  position: relative;
-  margin: 0 auto;
+  text-align: center;
+  background: white;
+  border-radius: 1.25em;
+  overflow: hidden;
 }
 
-.blu-circles img {
-  width: 100%;
+.prof-pic {
+  margin-top: -3.5em;
 }
 
+.prof-pic img {
+  border-radius: 3.5em;
+  border: 5px solid white;
+}
+
+.pers-details {
+  font-size: 1rem;
+}
+
+.pers-details p {
+  margin-top: -0.5em;
+}
+
+.stats {
+  display: flex;
+  border-top: 1px solid hsl(0, 3%, 86%);
+  margin-top: 2em;
+}
+
+.stats div {
+  flex: 1;
+}
+
+.stats p {
+  letter-spacing: 0.125rem;
+}
+
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-/* Background */
-.bg-main {
-  z-index: -2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: hsl(185, 75%, 39%);
-  min-width: 100%;
-}
-
-.big-circle {
-  margin: 0;
-  position: relative;
-}
-
-.top-bc {
-  bottom: 20em;
-  right: 15em;
-
-}
-
-.bot-bc {
-  bottom: 40em;
-  left: 65em;
 }
